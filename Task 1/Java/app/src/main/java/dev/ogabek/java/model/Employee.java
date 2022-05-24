@@ -1,0 +1,38 @@
+package dev.ogabek.java.model;
+
+public class Employee {
+
+    private final String employee_name;
+    private final String employee_salary;
+    private final int employee_age;
+    private final String profile_image;
+    private final int id;
+
+    public Employee(String employee_name, String employee_salary, int employee_age, String profile_image, int id) {
+        this.employee_name = employee_name;
+        this.employee_salary = employee_salary;
+        this.employee_age = employee_age;
+        this.profile_image = profile_image;
+        this.id = id;
+    }
+
+    public String getEmployee_name() {
+        return employee_name;
+    }
+
+    public String getEmployee_salary() {
+        return employee_salary;
+    }
+
+    public String getEmployee_age() {
+        return String.valueOf(employee_age);
+    }
+
+    public String getProfile_image() {
+        return profile_image;
+    }
+
+    public int getId() {
+        return id;
+    }
+}
